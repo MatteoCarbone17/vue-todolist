@@ -51,18 +51,18 @@ createApp({
                     done : false,
                  }, 
                  {
-                    newItem : '',
+                    newItem :' ',
                  }
                 ],  
         }
     },
     methods :{
-       /*  checkItem( item ){
-            if ( item === true ) {
-               item.classList.add("line-through")
-            }
-        } 
- 
+       
+      addNewItem(item){
+         item = this.list.newItem 
+         this.list.newItem.push(item)
+      }
+        
 
         /* addNewItem(content){
           content = this.list.newItem
