@@ -29,11 +29,14 @@
                         lista spesa : 
                     </h2>
                     <ul class="text-light fs-3">
-                        <li>
-                            prova
+                        <li v-for="(element , index ) in list" >
+                            {{ element.text }} {{ index}}
                         </li>
                     </ul>
-                   
+                    <div class="text-light mt-5">
+                        <input type="text" v-model="newItem">
+                        <button @click="addNewItem(newItem)"> Agiungi oggeti</button>
+                    </div>
                 </div>
             </div>
         </main>

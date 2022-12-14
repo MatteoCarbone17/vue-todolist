@@ -20,7 +20,8 @@ const { createApp } = Vue ;
 createApp({
     data (){
         return{
-            list :[
+            
+            list:[
                 {    
                    text: 'uova',
                    done : false ,
@@ -49,11 +50,26 @@ createApp({
                     text: 'fortuna',
                     done : false,
                  }, 
-                
-                ],
+                 {
+                    newItem : '',
+                 }
+                ],  
         }
     },
     methods :{
+       /*  checkItem( item ){
+            if ( item === true ) {
+               item.classList.add("line-through")
+            }
+        } 
+ 
+
+        /* addNewItem(content){
+          content = this.list.newItem
+          this.list.push(content)
+        } */
+         
         
     }
 }).mount('#app')
+
