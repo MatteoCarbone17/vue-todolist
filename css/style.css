@@ -1,0 +1,13 @@
+.bg-body-color{
+    background-color: rgba(12, 32, 98, 0.935);
+}
+
+li{
+    list-style-type: none;
+    border-bottom: 3px solid white;
+    border-radius: .3rem;
+    width: 50%;
+   padding: .5rem;
+
+    
+}
