@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="col-6">
                     <ul class="text-light fs-3" v-if="list.length > 0">
-                        <li v-for="(element , index)  in list" :class="(element.done = !element.done) ? 'line-through' : ' '" class="d-flex justify-content-between">
+                        <li v-for="(element , index)  in list" :class="(element.done) ? 'line-through' : ' '" class="d-flex justify-content-between">
                             {{ element.text }} 
                             <p>
                                 <i @click="removeItem(index)" class="fa-solid fa-xmark"></i>

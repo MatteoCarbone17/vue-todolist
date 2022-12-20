@@ -58,7 +58,12 @@ createApp({
     methods :{
 
       addNewItem(content){
-         this.list.push(content)
+         const newObjContent = {
+            text : content ,
+            done : false ,
+         }
+
+         this.list.push(newObjContent)
       },
 
       removeItem(indexContent){
