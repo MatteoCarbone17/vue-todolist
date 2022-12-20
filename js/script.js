@@ -22,7 +22,7 @@ createApp({
         return{
             
             list:[
-               newItem = '',
+               
                {    
                    text: 'uova',
                    done : false ,
