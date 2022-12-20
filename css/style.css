@@ -12,4 +12,5 @@ li{
 
 .line-through{
     text-decoration: line-through;
+    background-color: rgb(140, 84, 84);
 }

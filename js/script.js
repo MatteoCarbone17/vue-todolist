@@ -22,7 +22,8 @@ createApp({
         return{
             
             list:[
-                {    
+               newItem = '',
+               {    
                    text: 'uova',
                    done : false ,
                 },
@@ -50,25 +51,19 @@ createApp({
                     text: 'fortuna',
                     done : false,
                  }, 
-                 {
-                    newItem :' ',
-                 }
-                ],  
+                     
+            ],  
         }
     },
     methods :{
-       
-      addNewItem(item){
-         item = this.list.newItem 
-         this.list.newItem.push(item)
-      }
-        
 
-        /* addNewItem(content){
-          content = this.list.newItem
-          this.list.push(content)
-        } */
-         
+      addNewItem(content){
+         this.list.push(content)
+      },
+
+      removeItem(indexContent){
+         this.list.splice(indexContent, 1 )
+      }
         
     }
 }).mount('#app')
